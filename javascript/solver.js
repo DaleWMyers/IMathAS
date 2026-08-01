@@ -2,7 +2,8 @@
         controlEditor.setOption("extraKeys", {
          "Ctrl-M": function(cm) {
           handleSageEvent();
-         }
+         },
+         "Ctrl-H": "replace"
 	    });
 
 

@@ -1212,7 +1212,8 @@ function setupRandvarEditor() {
 	lineWrapping: true,
 	indentUnit: 2,
 	tabSize: 2,
-	styleSelectedText:true
+	styleSelectedText:true,
+	extraKeys: { "Ctrl-H": "replace" }
       });
 };
 var keepcodeEditor;
@@ -1226,7 +1227,8 @@ function setupKeepcodeEditor() {
 	lineWrapping: true,
 	indentUnit: 2,
 	tabSize: 2,
-	styleSelectedText:true
+	styleSelectedText:true,
+	extraKeys: { "Ctrl-H": "replace" }
       });
 };
 </script>

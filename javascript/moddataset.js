@@ -81,7 +81,8 @@ function setupQtextEditor(id) {
 		tabSize: 2,
 		viewportMargin: 500,
 		readOnly: !canedit,
-		styleSelectedText: true
+		styleSelectedText: true,
+		extraKeys: { "Ctrl-H": "replace" }
 	});
 	for (var i = 0; i < qEditor[id].lineCount(); i++) { qEditor[id].indentLine(i); }
 }
@@ -98,7 +99,8 @@ $(function () {
 		tabSize: 2,
 		viewportMargin: 500,
 		readOnly: !canedit,
-		styleSelectedText: true
+		styleSelectedText: true,
+		extraKeys: { "Ctrl-H": "replace" }
 	});
 	//controlEditor.setSize("100%",6+14*document.getElementById("control").rows);
 });
